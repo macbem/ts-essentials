@@ -2,7 +2,7 @@ import { Primitive } from "./types";
 
 export class UnreachableCaseError extends Error {  
   constructor(value: never) { 
-      super(`Unreachable case: ${value}`);
+    super(`Unreachable case: ${value}`);
   }
 }
 
