@@ -157,3 +157,15 @@ function actOnDummyOptions(options: DummyOptions): string {
   }
 }
 ```
+
+### ValueOf type
+
+```typescript
+const obj = {
+  id: "123e4567-e89b-12d3-a456-426655440000",
+  name: "Test object",
+  timestamp: 1548768231486,
+};
+
+type objKeys = ValueOf<typeof obj>; // string | number
+```
